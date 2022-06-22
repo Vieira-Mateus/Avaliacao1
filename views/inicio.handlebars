@@ -1,0 +1,32 @@
+<a href="/cadastrar"><button type="button" class="btn btn-success">Cadastrar Carro</button></a>
+<a href="/cadastro/usuario"><button type="button" class="btn btn-success">Cadastrar Usuário</button></a>
+{{#if user}}
+<a href="/logout"><button type="button" class="btn btn-success">Sair</button></a>
+{{else}}
+<a href="/login"><button type="button" class="btn btn-success">Entrar</button></a>
+{{/if}}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Ano</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each carros}}
+        <tr>
+            <th>{{id}}</th>
+            <td>{{marca}}</td>
+            <td>{{modelo}}</td>
+            <td>{{ano}}</td>
+                <td>
+                    <a href="/editar/{{id}}"><button type="submit" class="btn btn-warning">Editar</button></a>
+                    <a href="/remover/{{id}}"><button type="submit" class="btn btn-danger">Apagar</button></a>
+                </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
+ 

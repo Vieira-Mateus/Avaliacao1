@@ -1,0 +1,17 @@
+<h2>Editando Carro com ID {{idCarro}}</h2>
+<form action="/ediReq/{{idCarro}}" method="post">
+    <div class="mb-3">
+        <label class="form-label">Marca</label>
+        <input class="form-control" type="text" name="marca" value="{{marca}}">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Modelo</label>
+        <input class="form-control" type="text" name="modelo" value="{{modelo}}">
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Ano</label>
+        <input class="form-control" type="text" name="ano" value="{{ano}}">
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Atualizar</button>
+</form>
