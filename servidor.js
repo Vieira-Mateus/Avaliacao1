@@ -7,7 +7,7 @@ var passport = require("passport")
 require("./configs/security")(passport)
 
 var servidor = express()
-const PORTA = 3001
+const PORTA = 3000
 
 
 //Sessão

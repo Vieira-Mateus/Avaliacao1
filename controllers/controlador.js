@@ -122,8 +122,8 @@ carroControlador.montarReqEdicao = function (req, res) {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
             proxy:{
-                host: "localhost",
-                port: 3001
+                host: "18.233.225.56",
+                port: 3000
             }
         }
     ).then(function () {
