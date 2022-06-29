@@ -122,7 +122,7 @@ carroControlador.montarReqEdicao = function (req, res) {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
             proxy:{
-                host: "52.90.108.9",
+                host: "35.174.167.96",
                 port: 3000
             }
         }
@@ -138,7 +138,7 @@ carroControlador.montarReqEdicao = function (req, res) {
 carroControlador.montarReqDelete = function (req, res) {
     axios.delete('/' + req.params.id,{
         proxy:{
-            host: "52.90.108.9",
+            host: "35.174.167.96",
             port: 3000
         }
         
